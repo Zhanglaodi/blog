@@ -1,0 +1,149 @@
+.djs{
+	position: relative;
+	top: 20px;
+	left: 0px;
+	/*background-color: #000000;*/
+	/*z-index: 1000000;*/
+	width: 100%;
+	height: 275px;
+}
+.news{
+	position: absolute;
+	top: 140px;
+	/*background-color: #000000;*/
+	width: 100%;
+	height: 130px;
+}
+.news div a{
+position: absolute;
+right: 12px;
+top: 22px;
+font-size: 12px !important;
+color: #999;
+}
+#dha div{
+	width: 1200px;
+	height:180px ;
+	display: none;
+	position: absolute;
+}
+#dha:hover div{
+	position: absolute;
+	display: block;
+	z-index: 10000;
+	background-color: #FFFFFF;
+	top: 30px;
+	left: -1057px;
+}
+.loc div{
+	height: 438px;
+	display: none;
+	width: 320px;
+	position: absolute;
+	top: 30px;
+	left: -10px;
+}
+.loc:hover div{
+	display: block;
+	z-index: 1000000;
+	background-color: #FFFFFF;
+}
+#backbtn{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+.hy{
+	position: absolute;
+	left: 150px;
+	top: 0px;
+	width: 190px;
+	height: 275px;
+	background-color: #E83632;
+}
+#hy_s{
+	position: absolute;
+	top: 42px;
+	width: 100%;
+	text-align: center;
+	font-size: 34px;
+	left: 0;
+	color: #FFFFFF;
+}
+#hy_t{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	top: 90px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+}
+#hy_u{
+	position: absolute;
+left: 86px;
+top: 126px;
+display: block;
+width: 20px;
+height: 33px;
+background-image: url(../img/sprite.seckill.png);
+background-position: -35px -25px;
+}
+#hy_v{
+position: absolute;
+left: 0;
+width: 100%;
+text-align: center;
+top: 170px;
+font-size: 16px;
+color: #FFFFFF;
+}
+.nblbt{
+	width: 800px;
+	height: 275px;
+	position: relative;
+	top: 0;
+	/*height: ;*/
+	left: 340px;
+	/*background-color: #000000;*/
+}
+.nblbtn .nblbtn_a{
+	width: 800px;
+	height: 275px;
+	position: absolute;
+}
+#right1{
+		right:0;
+		opacity: 0.5;
+		border-radius: 20%;
+		
+	}
+	#left1{
+		opacity: 0.5;
+		border-radius: 20%;
+		left:0;
+	}
+	.item1{
+		width:100%;
+		height:100%;
+		font-size: 24px;
+		color:#fff;
+		position: absolute;
+		opacity: 0;
+		transition: all .5s;
+	}
+.item1:nth-child(1){
+		background-color: #CCCCCC;
+	}
+	.item1:nth-child(2){
+		background-color: #FFC001;
+	}
+	.item1:nth-child(3){
+		background-color: pink;
+	}
+	.item1:nth-child(4){
+		background-color:green ;
+	}
+	.item1:nth-child(5){
+		background-color: blue;
+	}
