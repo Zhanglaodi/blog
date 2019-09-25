@@ -19,7 +19,13 @@
 	<div class="myself">
 		<div class="part_left">
 			<div class="pic">
-			
+			<ul class="list">
+				<li class="item active"><img src="img/m1.jpg" alt="" /></li>
+				<li class="item"><img src="img/m2.jpg" alt="" /></li>
+				<li class="item"><img src="img/m3.jpg" alt="" /></li>
+				<button type="button" class="btn" id="right" onclick="goright()">></button>
+				<button type="button" class="btn" id="left" onclick="goleft()"><</button>
+			</ul>
 			</div>
 			<div class="wri">
 				今夜の月は綺麗ですね<br />
@@ -35,5 +41,42 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+			var items=document.getElementsByClassName('item');
+			/*var leftbtn=document.getElementById('left');
+			var rightbtn=document.getElementById('rihgt');*/
+			
+			var index=0;//index表示的是第几张图片使用  ===》active
+			//去掉active
+			var clearactive=function(){
+				for(var i=0;i<items.length;i++){
+					items[i].className='item';
+					
+				}
+			}
+			//加入active
+			var goindex=function(){
+				clearactive();
+				items[index].className='item active';
+			}
+			
+			var goright=function(){
+				if(index<2){
+					index++;
+				}
+				else
+				{
+					index=0;
+				}
+				goindex();
+			}
+			var goleft=function(){
+				if(index>0)
+					index--;
+				else
+					index=2;
+				goindex();
+			}
+		</script>
 </body>
 </html>
