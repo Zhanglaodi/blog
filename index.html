@@ -131,6 +131,7 @@
 				
 			</div>
 		</div>
+		
 		<script>
 			var point=document.getElementById("point");
 			var pans=document.getElementsByClassName("pan");
@@ -148,6 +149,8 @@
 			}
 			
 		</script>
+		
+		
 		
 		<script>
 			
@@ -168,6 +171,61 @@
 				s.innerHTML=sec;
 			}
 			setInterval("way()",1000);
+			
+		</script>
+		
+		<script>
+			var mytime=new Date();
+			var qsmonth=mytime.getMonth()+1;
+			//console.log(qsmonth);
+			var body=document.body;
+			var qsdate=mytime.getDate();
+			//console.log(qsdate);
+			var cdiv=document.createElement("div");
+			cdiv.style.position="fixed";
+			
+			cdiv.style.right="5px";
+			cdiv.style.top="30px";
+			cdiv.style.width="100px";
+			cdiv.style.height="100px";
+			cdiv.style.borderRadius="20px";
+			cdiv.innerHTML="生日快乐";
+			cdiv.style.textAlign="center";
+			cdiv.style.lineHeight="100px";
+			cdiv.style.backgroundColor="white";
+			//cdiv.style.display="none";
+			var tdiv=document.createElement("div");
+			tdiv.style.position="fixed";
+			//tdiv.style.display="none";
+			tdiv.style.right="5px";
+			tdiv.style.top="135px";
+			tdiv.style.width="100px";
+			tdiv.style.height="100px";
+			tdiv.style.borderRadius="20px";
+			
+			tdiv.style.backgroundColor="white";
+			tdiv.style.textAlign="center";
+			tdiv.style.lineHeight="100px";
+			if(qsmonth==5&&qsdate==30){
+			//alert("张八老表生日快乐啊！！！")
+			tdiv.innerHTML="老黑";
+			cdiv.style.display="block";
+			tdiv.style.display="block";
+			body.appendChild(cdiv);
+			body.appendChild(tdiv);
+			}
+			if(qsmonth==8&&qsdate==21){
+			//alert("哈泰生日快乐！！！");
+			tdiv.innerHTML="哈泰";
+			cdiv.style.display="block";
+			tdiv.style.display="block";
+			body.appendChild(cdiv);
+			body.appendChild(tdiv);
+			}
+			else {
+				cdiv.style.display="none";
+				tdiv.style.display="none";
+			}
 			
 		</script>
 		
