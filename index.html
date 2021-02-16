@@ -9,8 +9,8 @@
 				padding: 0;
 			}
 			body{
-			background-color: #000000;
-				background-attachment: scroll;
+			background-color: #fff;
+			
 			}
 			.box{
 				margin: 200px auto;
@@ -141,7 +141,7 @@
 				<div id="nspointer"><img src="img/pdd.png" width="290px" height="50px"></div>
 				<div id="nhpointer"><img src="img/sc.png" width="200px" height="50px"></div>
 				<div id="nmpointer"><img src="img/sd.png" width="260px" height="50px"></div>
-				<div class="point" id="point"</div>
+				<div class="point" id="point"></div>
 				
 			</div>
 		</div>
@@ -184,10 +184,10 @@
 				h.innerHTML=hour;
 				m.innerHTML=mi;
 				s.innerHTML=sec;
-				if(h>5&&h<17)
-				bys.style.backgroundColor="white";
-				else
-				bys.style.backgroundColor="black";
+				if(h>5&&h<17){
+				bys.style.backgroundColor="#fff";}
+				else{
+				bys.style.backgroundColor="#000";}
 			}
 			setInterval("way()",1000);
 			
