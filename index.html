@@ -110,7 +110,7 @@
 				opacity: 0.7;
 			}
 			.ld{
-				background-color: #fff;
+				background-color: #000;
 				font-size: 20px;
 				text-align:center ;
 			}
@@ -174,6 +174,7 @@
 				var h=document.getElementById("hour");
 				var m=document.getElementById("mi");
 				var s=document.getElementById("sec");
+				var bys=doucumnet.body;
 				year=mytime.getYear();
 				hour=mytime.getHours();
 				mi=mytime.getMinutes();
@@ -182,6 +183,10 @@
 				h.innerHTML=hour;
 				m.innerHTML=mi;
 				s.innerHTML=sec;
+				if(h>5&&h<17)
+				bys.style.backgroundColor="white";
+				else
+				bys.style.backgroundColor="black";
 			}
 			setInterval("way()",1000);
 			
@@ -206,10 +211,10 @@
 			cdiv.style.textAlign="center";
 			cdiv.style.lineHeight="100px";
 			cdiv.style.backgroundColor="white";
-			//cdiv.style.display="none";
+			
 			var tdiv=document.createElement("div");
 			tdiv.style.position="fixed";
-			//tdiv.style.display="none";
+			
 			tdiv.style.right="5px";
 			tdiv.style.top="135px";
 			tdiv.style.width="100px";
@@ -220,7 +225,7 @@
 			tdiv.style.textAlign="center";
 			tdiv.style.lineHeight="100px";
 			if(qsmonth==5&&qsdate==30){
-			//alert("张八老表生日快乐啊！！！")
+			
 			tdiv.innerHTML="老黑";
 			cdiv.style.display="block";
 			tdiv.style.display="block";
@@ -228,7 +233,7 @@
 			body.appendChild(tdiv);
 			}
 			if(qsmonth==8&&qsdate==21){
-			//alert("哈泰生日快乐！！！");
+			
 			tdiv.innerHTML="哈泰";
 			cdiv.style.display="block";
 			tdiv.style.display="block";
